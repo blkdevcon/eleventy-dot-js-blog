@@ -4,6 +4,9 @@
  * @see {@link https://www.11ty.dev/docs/config/ 11ty Documentation}
  */
 
+// Require native Node.js modules
+var fs = require('fs')
+
 /**
  * Require the includes module for the following.
  *
@@ -40,6 +43,26 @@ module.exports = function (eleventyConfig) {
    * @see @{@link https://www.11ty.dev/docs/config/#add-your-own-watch-targets Add your own watch targets in 11ty}
    */
   eleventyConfig.addWatchTarget('./css/')
+
+  /**
+   * Serve the rendered 404 page when using `eleventy --serve` locally
+   * @see {@link https://www.11ty.dev/docs/quicktips/not-found/#with-serve Adding a 404 page in 11ty}
+   */
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: (err, bs) => {
+        bs.addMiddleware("*", (req, res) => {
+          const content_404 = fs.readFileSync('_site/404.html');
+          // Provides the 404 content without redirect
+          res.write(content_404);
+          // Add 404 http status code in request header
+          // res.writeHead(404, { "Content-Type": "text/html" })
+          res.writeHead(404);
+          res.end()
+        })
+      }
+    }
+  })
 
   // If you want to use an alternative file structure,
   // then you can uncomment this return statement
