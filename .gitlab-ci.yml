@@ -1,0 +1,22 @@
+# This file configures CI/CD for GitLab pages
+# see https://docs.gitlab.com/ee/user/project/pages/getting_started_part_four.html#artifacts
+image: node:latest
+
+# This folder is cached between builds
+# http://docs.gitlab.com/ce/ci/yaml/README.html#cache
+cache:
+  paths:
+    - node_modules/
+
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+pages:
+  script:
+    - npm install
+    - npx eleventy --input=. --output=public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master

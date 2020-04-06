@@ -1,0 +1,6 @@
+/**
+ * @file Defines styles specific to pages with form elements
+ * @author Reuben L. Lillie <reubenlillie@gmail.com>
+ * To apply this stylesheet:
+ * Set a template’s `data.form` key to a value of `true`.
+ */

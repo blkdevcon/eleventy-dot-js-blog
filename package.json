@@ -1,0 +1,28 @@
+{
+  "name": "eleventy-dot-js-blog",
+  "version": "0.1.0",
+  "description": "A starter repository showing how to build a blog with the Eleventy static site generator using JavaScript templates.",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/reubenlillie/eleventy-dot-js-blog.git"
+  },
+  "author": "Reuben L. Lillie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/reubenlillie/eleventy-dot-js-blog/issues"
+  },
+  "homepage": "https://github.com/reubenlillie/eleventy-dot-js-blog#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "clean-css": "^4.2.3",
+    "html-minifier": "^4.0.0",
+    "terser": "^4.6.3"
+  }
+}
