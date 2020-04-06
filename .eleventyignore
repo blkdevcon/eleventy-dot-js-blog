@@ -4,4 +4,5 @@
 # For more information, see https://www.11ty.dev/docs/ignores/
 
 # Ignore all README files
+./CONTRIBUTING.md
 ./**/README.md
