@@ -33,6 +33,9 @@ module.exports = {
     separator: ' | ',
     // The link text for skip-to-content lins, used by screen readers
     skipToContent: 'Skip to main content',
+    // The link text to invite users to edit a page in the project Git repository
+    // Link path stored in package.json
+    editThisPage: 'Edit this page',
     // The paged navigation for larger archives of content
     // used in _includes/shortcodes/pagination-nav
     pagination: {

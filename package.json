@@ -11,7 +11,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/reubenlillie/eleventy-dot-js-blog.git"
+    "url": "git://github.com/reubenlillie/eleventy-dot-js-blog.git",
+    "editUrl": "https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/edit/master"
   },
   "author": "Reuben L. Lillie",
   "license": "MIT",
