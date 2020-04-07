@@ -39,10 +39,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('css')
 
   /**
-   * Have Eleventy watch files in the `/css/` directory for live browsersync
+   * Have Eleventy watch the following additional files for live browsersync
    * @see @{@link https://www.11ty.dev/docs/config/#add-your-own-watch-targets Add your own watch targets in 11ty}
    */
-  eleventyConfig.addWatchTarget('./css/')
+  eleventyConfig.addWatchTarget('./**/*.css')
+  eleventyConfig.addWatchTarget('./**/.js')
 
   /**
    * Serve the rendered 404 page when using `eleventy --serve` locally
