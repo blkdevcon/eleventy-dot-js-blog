@@ -22,8 +22,7 @@ module.exports = eleventyConfig =>
    */
   eleventyConfig.addShortcode('authorMeta', data =>
     `<meta name="author"
-      content="
-      ${data.author.name.fullName
+      content="${data.author.name.fullName
         ? data.author.name.fullName
         : data.copyright.holder
           ? data.copyright.holder
