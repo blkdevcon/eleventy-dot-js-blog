@@ -24,11 +24,13 @@ module.exports = eleventyConfig =>
     var l10n = data.site[data.locale]
     // Inform screen readers when the home page link is for the current page
     return `<header id="site_header">
+      <a href="#main"
+         class="screen-reader
+                screen-reader-focusable">${l10n.skipToContent}</a>
       <h1>${data.page.url === '/'
         ? `<a href="/" aria-current="page">${l10n.title}</a>`
         : `<a href="/">${l10n.title}</a>`}
       </h1>
       <p>${l10n.tagline}</p>
-      ${this.gridNav(data.collections.nav, data.page)}
       </header>`
   })

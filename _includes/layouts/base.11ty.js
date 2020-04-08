@@ -17,9 +17,9 @@ module.exports = function (data) {
   return `<!DOCTYPE html>
   <html lang="${data.locale ? l10n.locale : data.site.defaultLocale}">
     ${this.headTag(data)}
-    <body class="${data.page.fileSlug ? data.page.fileSlug : 'home'}">
-      <a href="#main">${l10n.skipToContent}</a>
+    <body class="grid gap ${data.page.fileSlug ? data.page.fileSlug : 'home'}">
       ${this.siteHeader(data)}
+      ${this.nav(data.collections.nav, data.page, ['flex', 'gap', 'wrap'])}
       <main id="main">
         ${data.content}
       </main>
