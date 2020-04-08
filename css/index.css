@@ -2,3 +2,28 @@
  * @file Defines styles common to all pages
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
+
+/* Visually hide an element, but leave it available for screen readers */
+.screen-reader {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+/* Make screen reader elements focusable */
+.screen-reader-focusable:active,
+.screen-reader-focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	white-space: normal;
+	width: auto;
+}
