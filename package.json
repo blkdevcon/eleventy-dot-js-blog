@@ -4,10 +4,9 @@
   "description": "A starter repository showing how to build a blog with the Eleventy static site generator using JavaScript templates.",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
+    "build": "ELEVENTY_ENV=production npx eleventy",
+    "dev": "ELEVENTY_ENV=development npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy"
   },
   "repository": {
     "type": "git",

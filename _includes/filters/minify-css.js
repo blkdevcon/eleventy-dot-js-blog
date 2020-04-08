@@ -22,8 +22,14 @@ module.exports = eleventyConfig =>
    * @param {String} stylesheet A raw stylesheet
    * @return {String} The minified stylesheet
    * @example `${this.minifyCSS($this.fileToString('css/inline.css'))}`
-   * @see {@link https://github.com/jakubpawlowicz/clean-css#minify-method GitHub}
+   * @see {@link https://github.com/jakubpawlowicz/clean-css#minify-method clean-css on GitHub}
+   * @see {@link https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables Environment variables in 11ty}
    */
-  eleventyConfig.addFilter("minifyCSS", stylesheet =>
-    minified = new CleanCSS({}).minify(stylesheet).styles
-  )
+  eleventyConfig.addFilter('minifyCSS', stylesheet => {
+    // Only minify stylesheets for production
+    if(process.env.ELEVENTY_ENV === 'production') {
+      minified = new CleanCSS({}).minify(stylesheet).styles
+    }
+    
+    return stylesheet
+  })

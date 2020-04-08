@@ -7,22 +7,27 @@
  * Import Juriy Zaytsev’s HTMLMinifier module
  * @see {@link https://github.com/kangax/html-minifier GitHub}
  */
-var htmlmin = require("html-minifier")
+var htmlmin = require('html-minifier')
 
 /**
- * An Eleventy filter for minifying HTML template files
+ * An Eleventy transform for minifying HTML template files
  * @module _includes/transforms/minify-html
  * @param {Object} eleventyConfig 11ty’s Config API
- * @see {@link https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions JavaScript template functions in 11ty}
+ * @see {@link https://www.11ty.dev/docs/config/#transforms 11ty docs}
  */
-module.exports = function (eleventyConfig) {
+module.exports = eleventyConfig =>
 
   /**
-   * Minifies HTML templates
-   * @see {@link https://www.11ty.dev/docs/config/#transforms 11ty docs}
+   * Minifies HTML
+   * @param {String} content An HTML document
+   * @param {String} outputPath Where Eleventy should output the content
+   * @return {String} The minified content
+   * @see {@link https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables Environment variables in 11ty}
    */
   eleventyConfig.addTransform('minifyHTML', (content, outputPath) => {
-    if( outputPath.endsWith('.html') ) {
+    // Only minify HTML for production
+    if(process.env.ELEVENTY_ENV === 'production' &&
+      outputPath.endsWith('.html')) {
       var minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
@@ -32,7 +37,4 @@ module.exports = function (eleventyConfig) {
     }
 
     return content
-
   })
-
-}
