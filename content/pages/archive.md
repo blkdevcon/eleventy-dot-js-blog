@@ -2,7 +2,7 @@
 title: Your Blog Title
 menuTitle: Blog
 tags: nav
-weight: 1
+weight: 3
 layout: layouts/archive
 pagination:
   data: collections.posts
