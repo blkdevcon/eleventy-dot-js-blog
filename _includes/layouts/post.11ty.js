@@ -6,7 +6,7 @@
 
 /**
  * Acts as front matter in JavaScript templates
- * @see {@link https://www.11ty.dev/docs/data-global/ Using data in 11ty}
+ * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
 exports.data = {
   layout: 'layouts/base'
@@ -22,7 +22,7 @@ exports.data = {
 exports.render = function (data) {
   return `<article>
     <header id="article_header">
-      <h1>${data.title}</h1>
+      <h2 class="no-margin">${data.title}</h2>
       <time>${this.pageDate(data)}</time>
     </header>
     ${data.content}
