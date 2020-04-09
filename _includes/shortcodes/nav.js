@@ -38,18 +38,14 @@ module.exports = eleventyConfig =>
         ${collection
           .sort((a, b) => a.data.weight - b.data.weight)
           .map(item => page.url === item.url
-            ? `<a href="${item.url}" aria-current="page">
-                ${item.data.menuTitle
-                  ? item.data.menuTitle
+            ? `<a href="${item.url}" aria-current="page">${item.data.navTitle
+                  ? item.data.navTitle
                   : item.data.title
-                }
-              </a>`
-            : `<a href="${item.url}">
-                ${item.data.menuTitle
-                  ? item.data.menuTitle
+                }</a>`
+            : `<a href="${item.data.url ? item.data.url : item.url}">${item.data.navTitle
+                  ? item.data.navTitle
                   : item.data.title
-                }
-              </a>`).join("\n")}
+                }</a>`).join("")}
         </nav>`
       : ''
   })

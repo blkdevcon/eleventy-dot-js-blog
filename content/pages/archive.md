@@ -1,6 +1,6 @@
 ---
 title: Your Blog Title
-menuTitle: Blog
+navTitle: Blog
 tags: nav
 weight: 3
 layout: layouts/archive

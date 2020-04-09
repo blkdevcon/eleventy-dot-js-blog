@@ -1,6 +1,6 @@
 ---
 title: About Your Site
-menuTitle: About
+navTitle: About
 tags: nav
 weight: 2
 ---
