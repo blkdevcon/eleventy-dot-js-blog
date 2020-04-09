@@ -15,9 +15,9 @@ Here’s an example of one way you might go about adding Spanish-language conten
 1. Make a directory named `es` inside this one (optionally, you could move all existing English-language content into a new `en` directory too)
 1. Nest corresponding copies of the [`pages`](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/tree/master/content/pages) and [`posts`] (https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/tree/master/content/posts) directories inside the newly created `es` directory (e.g., `content/es/pages` and `content/es/posts`)
 1. Copy `content.11tydata.js` to  the `es` directory, and rename the copied file `es.11tydata.js`
-1. Do the same for `es/pages/pages.11tydata.js` and `es/posts/posts.11tydata.js`
-1. Copy `content/pages/index.md` (the blog home page) to `es/pages/index.md` and set `permalink` to `'/es/'`
-1. Add an _identical property_ to each of the multilingual content files (in other words, _don’t translate the value_, e.g., add `translationKey: 'about'` in the front matter for both [`pages/about.md`](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/content/pages/about.md) and `es/pages/about.md`, or `translationKey: 'home'` inside both `pages/index.md` and `es/pages/index.md`)
+1. Do the same for `content/es/pages/pages.11tydata.js` and `content/es/posts/posts.11tydata.js`
+1. Copy `content/index.md` (the blog home page) to `content/es/index.md` and set `permalink` to `'/es/'` in the front matter data
+1. Add an _identical front matter data property_ to each of the multilingual content files (_don’t translate the value_, e.g., add `translationKey: 'about'` in the front matter for both [`pages/about.md`](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/content/pages/about.md) and `es/pages/about.md`, or `translationKey: 'home'` inside both `contect/index.md` and `content/es/index.md`)
 
 _See [`../_data/README.md`](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/blob/master/_data/README.md) for instructions on how to translate [global data](https://www.11ty.dev/docs/data-global/) strings._
 
