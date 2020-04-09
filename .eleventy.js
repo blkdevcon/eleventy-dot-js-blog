@@ -33,6 +33,12 @@ module.exports = function (eleventyConfig) {
   includes(eleventyConfig)
 
   /**
+   * Combine data in the Eleventy data cascade, rather than overwriting it
+   * @see {@link https://www.11ty.dev/docs/data-deep-merge/ Data deep merge in 11ty}
+   */
+  eleventyConfig.setDataDeepMerge(true)
+
+  /**
    * Copy static assets to the output directory
    * @see {@link https://www.11ty.dev/docs/copy/ Passthrough copy in 11ty}
    */
@@ -43,7 +49,7 @@ module.exports = function (eleventyConfig) {
    * @see @{@link https://www.11ty.dev/docs/config/#add-your-own-watch-targets Add your own watch targets in 11ty}
    */
   eleventyConfig.addWatchTarget('./**/*.css')
-  eleventyConfig.addWatchTarget('./**/.js')
+  eleventyConfig.addWatchTarget('./**/*.js')
 
   /**
    * Serve the rendered 404 page when using `eleventy --serve` locally
