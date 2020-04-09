@@ -2,6 +2,13 @@
 
 A starter project showing how to build a blog with the [Eleventy](https://11ty.dev/) static site generator using [JavaScript templates (`*.11ty.js`)](https://11ty.dev/languages/javascript/).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cd87e631-aeaa-45fe-9c99-800ef96b53b1/deploy-status)](https://app.netlify.com/sites/eleventy-dot-js-blog/deploys)
+
+## Demo
+
+* [GitLab Pages](https://reubenlillie.gitlab.io/eleventy-dot-js-blog/)
+* [Netlify](https://eleventy-dot-js-blog.netlify.com/)
+
 ## Summary
 
 The [layouts](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/tree/master/_includes/layouts) are written entirely in vanilla JavaScript (files with the [`*.11ty.js`](https://www.11ty.dev/docs/languages/javascript/) extension). Eleventy processes those templates, and creates prerendered copies of the site HTML.
