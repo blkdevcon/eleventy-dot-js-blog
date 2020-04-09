@@ -14,7 +14,7 @@ variables:
 pages:
   script:
     - npm install
-    - npx eleventy --input=. --output=public
+    - ELEVENTY_ENV=production npx eleventy --input=. --output=public --pathPrefix="eleventy-dot-js-blog/"
   artifacts:
     paths:
       - public
