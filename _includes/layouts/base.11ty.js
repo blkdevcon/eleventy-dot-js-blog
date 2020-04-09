@@ -17,10 +17,10 @@ module.exports = function (data) {
   return `<!DOCTYPE html>
   <html lang="${data.locale ? l10n.locale : data.site.defaultLocale}">
     ${this.headTag(data)}
-    <body class="grid gap ${data.page.fileSlug ? data.page.fileSlug : 'home'}">
+    <body class="grid gap no-margin">
       ${this.siteHeader(data)}
-      ${this.nav(data.collections.nav, data.page, ['flex', 'gap', 'wrap'])}
-      <main id="main">
+      ${this.nav(data.collections.nav, data.page)}
+      <main id="main" class="grid gap">
         ${data.content}
       </main>
       ${this.siteFooter(data)}
