@@ -24,10 +24,10 @@ module.exports = {
   en: {
     // English as used in the Unite States
     locale: 'en-US',
-    title: "Your Site Title",
+    title: 'Site Title',
     // The subtitle, slogan, or catchphrase for your site,
     // used in _includes/shortcodes/site-header
-    tagline: "A simpler Eleventy site",
+    tagline: 'Site tagline',
     // Puncuation between a title and subtitle,
     // used in _includes/shortcodes/title-tag
     separator: ' | ',
@@ -60,7 +60,7 @@ module.exports = {
     // used in _includes/layout/archive.11ty.js
     postsArchive: {
       // Heading for your most recent posts, used on home page
-      headline: 'Your latest posts',
+      headline: 'Latest posts',
       // Invite the user to visit your archive of posts, used on home page
       prompt: '&hellip;peruse your blog archives',
       // The landing page for your archive of posts
@@ -72,7 +72,7 @@ module.exports = {
      */
     dateOptions: {
       year: 'numeric',
-      month: 'short',
+      month: 'long',
       day: 'numeric',
       timeZone: 'UTC'
     }
