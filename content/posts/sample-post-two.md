@@ -1,6 +1,7 @@
 ---
 title: Sample Post Two
 date: 2020-04-02
+description: Your head is not an artifact!
 ---
 
 The Federation’s gone; the Borg is everywhere! I will obey your orders. I will serve this ship as First Officer. And in an attack against the Enterprise, I will die with this crew. But I will not break my oath of loyalty to Starfleet. and attack the Romulans. But the probability of making a six is no greater than that of rolling a seven. I’ve had twelve years to think about it. And if I had it to do over again, I would have grabbed the phaser and pointed it at you instead of them.

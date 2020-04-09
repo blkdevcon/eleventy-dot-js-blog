@@ -1,6 +1,7 @@
 ---
 title: Sample Post Three
 date: 2020-04-03
+description: Mr. Worf, you do remember how to fire phasers? 
 ---
 
 Yes, absolutely, I do indeed concur, wholeheartedly! I’m afraid I still don’t understand, sir. Besides, you look good in a dress. Then maybe you should consider this: if anything happens to them, Starfleet is going to want a full investigation. and attack the Romulans. In all trust, there is the possibility for betrayal. Mr. Worf, you sound like a man who’s asking his friend if he can start dating his sister. Sorry, Data. I am your worst nightmare!

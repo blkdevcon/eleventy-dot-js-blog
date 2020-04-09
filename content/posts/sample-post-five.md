@@ -1,6 +1,8 @@
 ---
 title: Sample Post Five
 date: 2020-04-05
+description: This should be interesting.
+highlight: true
 ---
 
 Captain, why are we out here chasing comets? My oath is between Captain Kargan and myself. Your only concern is with how you obey my orders. Or do you prefer the rank of prisoner to that of lieutenant? The Federation’s gone; the Borg is everywhere! And blowing into maximum warp speed, you appeared for an instant to be in two places at once. What? We’re not at all alike! This is not about revenge. This is about justice. Then maybe you should consider this: if anything happens to them, Starfleet is going to want a full investigation. I recommend you don’t fire until you’re within 40,000 kilometers. I’m afraid I still don’t understand, sir.

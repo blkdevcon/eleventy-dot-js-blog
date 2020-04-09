@@ -1,6 +1,7 @@
 ---
 title: Sample Post Four
 date: 2020-04-04
+description: Some days you get the bear, and some days the bear gets you.
 ---
 
 I’d like to think that I haven’t changed those things, sir. I think you’ve let your personal feelings cloud your judgement. Fate. It protects fools, little children, and ships named "Enterprise." Maybe we better talk out here; the observation lounge has turned into a swamp. I’ll be sure to note that in my log. Could someone survive inside a transporter buffer for 75 years?

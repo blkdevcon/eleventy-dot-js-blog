@@ -1,6 +1,7 @@
 ---
 title: Sample Post One
 date: 2020-04-01
+description: The game’s not big enough unless it scares you a little.
 ---
 
 We could cause a diplomatic crisis. Take the ship into the Neutral Zone. We finished our first sensor sweep of the neutral zone. Could someone survive inside a transporter buffer for 75 years? I am your worst nightmare! I’m afraid I still don’t understand, sir. And blowing into maximum warp speed, you appeared for an instant to be in two places at once. They were just sucked into space. About four years. I got tired of hearing how young I looked. Then maybe you should consider this: if anything happens to them, Starfleet is going to want a full investigation.
