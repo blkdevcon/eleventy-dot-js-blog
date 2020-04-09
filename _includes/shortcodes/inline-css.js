@@ -20,11 +20,7 @@ module.exports = eleventyConfig =>
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    */
   eleventyConfig.addShortcode('inlineCSS', function (data) {
-    var root = `
-      :root {
-        --primary-color: ${data.colors.primary};
-      }
-    `
+    var root = `${this.cssRoot(data)}`
     var css = `${this.fileToString('css/index.css')}`;
     (data.page.url === '/')
       ? css += `${this.fileToString('css/home.css')}`
@@ -32,5 +28,5 @@ module.exports = eleventyConfig =>
     (data.form && data.form !== undefined)
       ? css += `${this.fileToString('css/forms.css')}`
       : css += '';
-    return root + css
+    return `${root}\n${css}`
   })

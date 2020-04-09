@@ -4,8 +4,10 @@
  */
 
 // Import shortcodes to include
+var archive = require('./archive')
 var author = require('./author')
 var authorMeta = require('./author-meta')
+var cssRoot = require('./css-root')
 var copyrightNotice = require('./copyright-notice')
 var description = require('./description')
 var editThisPage = require('./edit-this-page')
@@ -31,8 +33,10 @@ var titleTag = require('./title-tag')
 module.exports = eleventyConfig => {
 
   // Function calls to shortcodes to include
+  archive(eleventyConfig)
   author(eleventyConfig)
   authorMeta(eleventyConfig)
+  cssRoot(eleventyConfig)
   copyrightNotice(eleventyConfig)
   description(eleventyConfig)
   editThisPage(eleventyConfig)

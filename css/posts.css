@@ -1,0 +1,7 @@
+/**
+ * @file Defines styles specific to posts
+ * @author Reuben L. Lillie <reubenlillie@gmail.com>
+ */
+article h2 {
+  font-size: 2.5em;
+}
