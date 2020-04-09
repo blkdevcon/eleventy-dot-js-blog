@@ -6,7 +6,6 @@ A starter project showing how to build a blog with the [Eleventy](https://11ty.d
 
 ## Demo
 
-* [GitLab Pages](https://reubenlillie.gitlab.io/eleventy-dot-js-blog/)
 * [Netlify](https://eleventy-dot-js-blog.netlify.com/)
 
 ## Summary
