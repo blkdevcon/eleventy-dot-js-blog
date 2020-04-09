@@ -11,7 +11,7 @@ A starter project showing how to build a blog with the [Eleventy](https://11ty.d
 
 ## Summary
 
-The [layouts](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/tree/master/_includes/layouts) are written entirely in vanilla JavaScript (files with the [`*.11ty.js`](https://www.11ty.dev/docs/languages/javascript/) extension). Eleventy processes those templates, and creates prerendered copies of the site HTML.
+The [layouts](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/tree/master/_includes/layouts) are written entirely in vanilla JavaScript (files with the [`*.11ty.js`](https://www.11ty.dev/docs/languages/javascript/) extension). Eleventy processes those templates and creates prerendered copies of the site HTML.
 
 ## Getting started
 
@@ -68,5 +68,7 @@ DEBUG=* npx eleventy
 ## Publish your own copy
 
 The command `npm run build` will generate a copy of the site files in a `_site` directory, which you can deploy with any hosting service.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://gitlab.com/reubenlillie/eleventy-dot-js-blog)
 
 &copy; 2020 by [Reuben L. Lillie](https://twitter.com/reubenlillie)
