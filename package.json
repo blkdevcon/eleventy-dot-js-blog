@@ -16,9 +16,9 @@
   "author": "Reuben L. Lillie",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/reubenlillie/eleventy-dot-js-blog/issues"
+    "url": "https://gitlab.com/reubenlillie/eleventy-dot-js-blog/issues"
   },
-  "homepage": "https://github.com/reubenlillie/eleventy-dot-js-blog#readme",
+  "homepage": "https://gitlab.com/reubenlillie/eleventy-dot-js-blog#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "clean-css": "^4.2.3",

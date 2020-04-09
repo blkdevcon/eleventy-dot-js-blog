@@ -24,6 +24,7 @@ module.exports = eleventyConfig =>
     `:root {
       /* Color Codes */
       --black: ${data.colors.grayscale[900].hex};
+      --grayscale-200: ${data.colors.grayscale[200].hex};
       --grayscale-400: ${data.colors.grayscale[400].hex};
       --grayscale-600: ${data.colors.grayscale[600].hex};
       --white: ${data.colors.grayscale.white.hex};
