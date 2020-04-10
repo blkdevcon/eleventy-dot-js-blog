@@ -22,7 +22,7 @@ exports.data = {
  */
 exports.render = function (data) {
   return `<article>
-    <header>
+    <header class="article-header">
       <h2>${data.title}</h2>
     </header>
     ${data.content}

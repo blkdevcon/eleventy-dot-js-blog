@@ -21,7 +21,7 @@ exports.data = {
  */
 exports.render = function (data) {
   return `<article>
-    <header id="article_header">
+    <header class="article-header">
       <h2 class="no-margin">${data.title}</h2>
       <time>${this.pageDate(data)}</time>
     </header>

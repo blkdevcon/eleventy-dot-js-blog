@@ -18,11 +18,11 @@ exports.data = {
  * @name render()
  * @param {Object} data 11ty’s data object
  * @return {String} The rendered template
- * @see {@link https://www.11ty.dev/docs/shortcodes/ 11ty shortcodes}
+ * @see {@link https://www.11ty.dev/docs/shortcodes/ Shortcodes in 11ty}
  */
 exports.render = data =>
   `<article>
-    <header>
+    <header class="article-header">
       <h2>${data.title}</h2>
     </header>
     ${data.content}
