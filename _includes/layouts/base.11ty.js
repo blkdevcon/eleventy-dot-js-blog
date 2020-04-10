@@ -29,7 +29,7 @@ module.exports = function (data) {
             <li>(Optional) 📝 Edit <code>.eleventy.js</code> with your configuration preferences</li>
             <li>❌ Delete this message from <code>./_includes/layouts/base.11ty.js</code></li>
           </ul>
-          <p style="display:flex;gap:var(--base-unit);">… You could also 👉<a href="https://app.netlify.com/start/deploy?repository=https://gitlab.com/reubenlillie/eleventy-dot-js-blog"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify"></a></p>
+          <p style="display:flex;gap:var(--base-unit);">… You could also 👉<a href="https://app.netlify.com/start/deploy?repository=https://gitlab.com/reubenlillie/eleventy-dot-js-blog">${this.fileToString('img/deploy-to-netlify-button.svg')}</a></p>
           <p>ℹ️  More information on <a href="${data.pkg.homepage}">GitLab</a></p>
         </aside><!-- ⬆️  … and this line -->
         ${data.content}
