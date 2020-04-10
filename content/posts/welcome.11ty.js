@@ -34,7 +34,7 @@ The posts in this sample blog are meant to guide you through how to install 🍦
 
 You mean besides the opportunity to overuse the vanilla icecream emoji?
 
-🍦.11ty.js is designed to for [myriad reasons outline on the About page](/about/), but one in particular bears repeating here:
+🍦.11ty.js is designed for [a myriad of reasons outlined on the About page](/about/), but one in particular bears repeating here:
 
 _We need to lower the barrier to entry for web development._
 
