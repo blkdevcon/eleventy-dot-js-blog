@@ -1,7 +1,16 @@
 /**
  * @file Defines styles common to all pages
+ * Custom properties are set in `_includes/shortcodes/css-root.js`
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
+ * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/--*CSS Custom Properties on MDN}
  */
+
+/* Set box-sizing for all elements */
+*:
+*:before
+*:after {
+  box-sizing: border-box;
+}
 
 /* Visually hide an element, but leave it available for screen readers */
 .screen-reader-text {
@@ -37,7 +46,7 @@ main,
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  column-gap: 1em;
 }
 
 /* Margin */
@@ -56,11 +65,20 @@ footer {
   color: var(--gray);
 }
 
+code {
+  background-color: var(--grayscale-100);
+  color: var(--black);
+  hyphens: none;
+  padding: 1px 3px;
+  border-radius: 3px;
+}
+
 /* Typography */
 body {
   font-family: system-ui, serif;
   font-size: 1.25em;
   line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
 nav a,
@@ -68,9 +86,19 @@ time {
   font-weight: 700;
 }
 
+article p {
+  text-indent: var(--base-unit);
+  text-align: justify;
+  hyphens: auto;
+}
+
 time,
 #site_footer {
   font-size: small;
+}
+
+ul {
+  list-style: square;
 }
 
 /* Links */
@@ -84,12 +112,14 @@ a:visited {
   opacity: 0.8;
 }
 
+nav a {
+  padding: 0.5em;
+}
+
 /* Border */
 #site_header + nav {
   border-top: var(--border);
   border-bottom: var(--border);
-  padding-top: var(--base-unit);
-  padding-bottom: var(--base-unit);
 }
 
 #site_footer {
