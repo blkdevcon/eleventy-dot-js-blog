@@ -12,7 +12,7 @@
 module.exports = eleventyConfig =>
 
   /**
-   * OpenGraph and Twitter metadata with fallbacks (~/_data/site.js)
+   * OpenGraph and Twitter metadata with fallbacks (./_data/site.js)
    * @method
    * @name socialMeta
    * @param {Object} data 11ty’s data object
@@ -37,7 +37,7 @@ module.exports = eleventyConfig =>
       ? `<meta property="og:image" content="${data.site.baseUrl}/img/${data.thumbnail}">
         <meta name="twitter:image" content="${data.site.baseUrl}/img/${data.thumbnail}">
         <meta name="twitter:card" content="summary_large_image">`
-        // Create a file named ~/img/headshot.jpg to make the fallback work
+        // Create a file named ./img/headshot.jpg to make the fallback work
       : `<meta property="og:image" content="${data.site.baseUrl}/img/headshot.jpg">
         <meta name="twitter:image" content="${data.site.baseUrl}/img/headshot.jpg">
         <meta name="twitter:card" content="summary_large_image">`

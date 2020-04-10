@@ -15,7 +15,7 @@ module.exports = eleventyConfig =>
    * @method
    * @name inlineCSS
    * @param {Object} data 11ty’s data object
-   * @return {string} The rendered shortcode
+   * @return {String} The rendered shortcode
    * @example `${this.inlineCSS(data)}`
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    */

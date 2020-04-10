@@ -22,7 +22,7 @@ module.exports = eleventyConfig =>
    */
   eleventyConfig.addShortcode('copyrightNotice', data =>
     `<span id="copyright_year">&copy; ${data.copyright.year}</span>
-      <span id="copyright_holder">by ${data.copyright.holder}.</span>
+      <span id="copyright_holder">${data.copyright.holder}.</span>
       <span id="copyright_license">
         <a href="${data.copyright.url}"><abbr title="${data.copyright.license.abbr}: ${data.copyright.license.name}">${data.copyright.license.abbr}</abbr></a>.
       </span>`

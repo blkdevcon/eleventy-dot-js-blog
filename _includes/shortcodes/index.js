@@ -1,5 +1,5 @@
 /**
- * @file Imports shortcodes and configures them with 11ty (~/.eleventy.js)
+ * @file Imports shortcodes and configures them with 11ty (.eleventy.js)
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
 
@@ -7,8 +7,9 @@
 var archive = require('./archive')
 var author = require('./author')
 var authorMeta = require('./author-meta')
-var cssRoot = require('./css-root')
+var colophon = require('./colophon')
 var copyrightNotice = require('./copyright-notice')
+var cssRoot = require('./css-root')
 var description = require('./description')
 var editThisPage = require('./edit-this-page')
 var externalCSS = require('./external-css')
@@ -36,8 +37,9 @@ module.exports = eleventyConfig => {
   archive(eleventyConfig)
   author(eleventyConfig)
   authorMeta(eleventyConfig)
-  cssRoot(eleventyConfig)
+  colophon(eleventyConfig)
   copyrightNotice(eleventyConfig)
+  cssRoot(eleventyConfig)
   description(eleventyConfig)
   editThisPage(eleventyConfig)
   externalCSS(eleventyConfig)
