@@ -24,18 +24,18 @@ module.exports = {
   en: {
     // English as used in the Unite States
     locale: 'en-US',
-    title: '11ty.js',
+    title: '🍦.11ty.js',
     // The subtitle, slogan, or catchphrase for your site,
     // used in _includes/shortcodes/site-header
-    tagline: 'The vanilla JavaScript Eleventy start kit of your dreams',
+    tagline: 'The vanilla JavaScript 🕚 Eleventy starter project of your dreams 💭',
     // Puncuation between a title and subtitle,
     // used in _includes/shortcodes/title-tag
-    separator: ' | ',
+    separator: ' 🍦 ',
     // The link text for skip-to-content lins, used by screen readers
     skipToContent: 'Skip to main content',
     // The link text to invite users to edit a page in the project Git repository
     // Link path stored in package.json
-    editThisPage: 'Edit this page',
+    editThisPage: '📝 Edit this page',
     // The paged navigation for larger archives of content
     // used in _includes/shortcodes/pagination-nav
     pagination: {
@@ -62,7 +62,7 @@ module.exports = {
       // Heading for your most recent posts, used on home page
       headline: 'Latest posts',
       // Invite the user to visit your archive of posts, used on home page
-      prompt: '&hellip;peruse your blog archives',
+      prompt: '… peruse your blog archives 👀',
       // The landing page for your archive of posts
       url: '/blog/'
     },
@@ -75,6 +75,6 @@ module.exports = {
       month: 'long',
       day: 'numeric',
       timeZone: 'UTC'
-    }
+    },
   }
 }

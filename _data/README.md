@@ -10,7 +10,7 @@ To change the main locale for your content, rename the `en` object key to anothe
 
 To add support for multiple content languages:
 
-1. Copy and paste the `en` object withinn `site.js`
+1. Copy and paste the `en` object within `site.js`
 1. Renaming the copied object key to whatever ISO language code you choose, e.g., `es` for Spanish)
 1. Translate the values for each of the properties
 

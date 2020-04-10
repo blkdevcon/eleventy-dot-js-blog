@@ -16,36 +16,36 @@
  */
 module.exports = {
   name: {
-    fullName: "Your name",
-    givenName: "Your given name",
-    surname: "Your surname"
+    fullName: 'Reuben L. Lillie',
+    givenName: 'Reuben',
+    surname: 'Lillie'
   },
   social: {
     // Add or remove accounts for social media platforms
     accounts: [
       {
-        name: "GitHub",
-        url: "https://github.com/username/"
+        name: 'GitHub',
+        url: 'https://github.com/reubenlillie/'
       },
       {
-        name: "GitLab",
-        url: "https://gitlab.com/username/"
+        name: 'GitLab',
+        url: 'https://gitlab.com/reubenlillie/'
       },
       {
-        name: "Instagram",
-        url: "https://www.instagram.com/username/"
+        name: 'Instagram',
+        url: 'https://www.instagram.com/reuben.lillie/'
       },
       {
-        name: "LinkedIn",
-        url: "https://linkedin.com/in/username/"
+        name: 'LinkedIn',
+        url: 'https://linkedin.com/in/reubenlillie/'
       },
       {
-        name: "Messenger",
-        url: "https://m.me/username/"
+        name: 'Messenger',
+        url: 'https://m.me/reubenlillie/'
       },
       {
-        name: "Twitter",
-        url: "https://twitter.com/username/"
+        name: 'Twitter',
+        url: 'https://twitter.com/reubenlillie/'
       }
     ]
   }

@@ -18,10 +18,10 @@
 module.exports = {
   // Use current year
   year: new Date().getFullYear(),
-  holder: "Your copyright holder",
+  holder: '<a href=\"https://twitter.com/reubenlillie\">Reuben L. Lillie</a>',
   license: {
-    abbr: "CC BY-SA",
-    name: "Creative Commons Attribution-ShareAlike 4.0 International license",
+    abbr: 'CC BY-SA',
+    name: 'Creative Commons Attribution-ShareAlike 4.0 International license',
   },
-  url: "https://creativecommons.org/licenses/by-sa/4.0/"
+  url: 'https://creativecommons.org/licenses/by-sa/4.0/'
 }
