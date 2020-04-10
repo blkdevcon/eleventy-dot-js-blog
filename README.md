@@ -16,7 +16,7 @@ The [layouts](https://gitlab.com/reubenlillie/eleventy-dot-js-blog/-/tree/master
 
 * 💯 Lighthouse scores for 
   * 💨 Performance 
-  * ♿ Accessiblity
+  * ♿ Accessibility
   * ☑️  Best practices
   * 🔍 Search Engine Optimization
 * 🏸 Lightweight front end
