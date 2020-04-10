@@ -26,13 +26,13 @@ exports.data ={
  * @see {@link https://www.11ty.dev/docs/quicktips/not-found/ 404 pages in 11ty}
  */
 exports.render = data =>
-  `Unless you were looking for this page on purpose, well … the other resource you were actually looking for probably can’t be found at the address you requested.
+`Unless you were looking for this page on purpose, well … the other resource you were actually looking for probably can’t be found at the address you requested.
 
-  📝 Edit this template to help your visitors find their way back to more meaningful content.
+📝 Edit this template to help your visitors find their way back to more meaningful content.
 
-  ### Other options
+### Other options
 
-  * [😇 Complain to ${data.author.name.givenName} on Twitter](${data.author.social.accounts.find(
-    account => account.name === 'Twitter').url})
-  * [📥 File an issue in Git](${data.pkg.bugs.url})
-  * [🏡 Return to the homepage](${data.pkg.bugs.url})`
+* [😇 Complain to ${data.author.name.givenName} on Twitter](${data.author.social.accounts.find(
+  account => account.name === 'Twitter').url})
+* [📥 File an issue in Git](${data.pkg.bugs.url})
+* [🏡 Return to the homepage](${data.pkg.bugs.url})`
