@@ -24,5 +24,6 @@ module.exports = eleventyConfig =>
     return `<footer id="site_footer">
         <p>${this.editThisPage(data)}</p>
         <p>${this.copyrightNotice(data)}</p>
+        <p>${this.colophon(data)}</p>
       </footer>`
   })
