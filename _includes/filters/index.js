@@ -1,5 +1,5 @@
 /**
- * @file Imports filters and configures them with 11ty (~/.eleventy.js)
+ * @file Imports filters and configures them with 11ty (.eleventy.js)
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  */
 
