@@ -29,6 +29,7 @@ module.exports = eleventyConfig =>
     // Only minify stylesheets for production
     if(process.env.ELEVENTY_ENV === 'production') {
       minified = new CleanCSS({}).minify(stylesheet).styles
+      return minified
     }
     
     return stylesheet

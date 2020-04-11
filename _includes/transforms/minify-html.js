@@ -27,7 +27,7 @@ module.exports = eleventyConfig =>
   eleventyConfig.addTransform('minifyHTML', (content, outputPath) => {
     // Only minify HTML for production
     if(process.env.ELEVENTY_ENV === 'production' &&
-      (outputPath === true &&  outputPath.endsWith('.html'))) {
+      (outputPath !== false && outputPath.endsWith('.html'))) {
       var minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
