@@ -18,7 +18,7 @@ module.exports = eleventyConfig =>
    * @param {Object} data 11ty’s data object
    * @param {Array} arr The 11ty content objects to list
    * @return {String} The rendered shortcode
-   * @example `${this.archive(data)}`
+   * @example `${this.archive(data, data.pagination.items)}`
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    */
   eleventyConfig.addShortcode('archive', function (data, arr) {

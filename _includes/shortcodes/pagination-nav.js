@@ -50,7 +50,7 @@ module.exports = eleventyConfig =>
         <!-- Show numbered pages
           when there are at least five -->
         ${data.pagination.pages.length >= 5
-          ? data.pagination.pages.map((item, index) =>
+          ? data.pagination.pages.map((page, index) =>
             `<a href="${data.pagination.hrefs[index]}"
               aria-label="${l10n.pageLabel} ${index + 1}"
               ${data.page.url === data.pagination.hrefs[index]
