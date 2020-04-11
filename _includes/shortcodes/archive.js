@@ -21,14 +21,13 @@ module.exports = eleventyConfig =>
    * @example `${this.archive(data)}`
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    */
-  eleventyConfig.addShortcode('archive', (data, arr) => {
+  eleventyConfig.addShortcode('archive', function (data, arr) {
     var l10n = data.site[data.locale]
     return `<section class="grid gap">
     ${arr.map(item =>
       `<article style="${(item.data.highlight !== undefined && item.data.highlight === true)
         ? 'padding:var(--base-unit);border:var(--border);' : ''}">
-        <time>${item.data.page.date
-          .toLocaleDateString(`${l10n.locale}`, l10n.dateOptions)}</time>
+        <time>${this.pageDate(item.data)}</time>
         <h2 class="no-margin">
           <a href="${item.data.page.url}">${item.data.title}</a>
         </h2>
