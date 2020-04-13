@@ -19,7 +19,7 @@ module.exports = function (data) {
     ${this.headTag(data)}
     <body class="grid gap no-margin">
       ${this.siteHeader(data)}
-      ${this.nav(data.collections.nav, data.page)}
+      ${this.nav(data.collections.nav, data.page, '', l10n.nav.primary)}
       <main id="main" class="grid gap">
         ${data.content}
       </main>

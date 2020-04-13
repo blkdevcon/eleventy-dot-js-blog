@@ -76,5 +76,10 @@ module.exports = {
       day: 'numeric',
       timeZone: 'UTC'
     },
+    // Options for navigation elements
+    nav: {
+      // The `aria-label` to apply to the primary navigation
+      primary: 'primary navigation'
+    }
   }
 }
