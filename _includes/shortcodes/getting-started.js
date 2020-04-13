@@ -1,5 +1,5 @@
 /**
- * @file Defines a shortcode for displaying as `aside` about getting started
+ * @file Defines a shortcode for displaying a `section` about getting started
  * @author Reuben L. Lillie <reubenlillie@gmail.com>
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions JavaScript template functions in 11ty}
  */
@@ -12,7 +12,7 @@
 module.exports = eleventyConfig =>
 
   /**
-   * “Getting Started” `aside` markup
+   * “Getting Started” `section` markup
    * @method
    * @name gettingStarted
    * @param {Object} 11ty’s data object
@@ -21,7 +21,7 @@ module.exports = eleventyConfig =>
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
    */
   eleventyConfig.addShortcode('gettingStarted', function (data) { 
-    return `<aside 
+    return `<section 
       style="border:var(--border);padding:var(--base-unit);">
       <h2>🎬 Get started!</h2>
       <ul>
@@ -31,5 +31,5 @@ module.exports = eleventyConfig =>
       </ul>
       <p style="display:flex;gap:var(--base-unit);">… You could also 👉<a href="https://app.netlify.com/start/deploy?repository=https://gitlab.com/reubenlillie/eleventy-dot-js-blog">${this.fileToString('img/deploy-to-netlify-button.svg')}</a></p>
       <p>ℹ️  More information on <a href="${data.pkg.homepage}">GitLab</a></p>
-    </aside>`
+    </section>`
   })
