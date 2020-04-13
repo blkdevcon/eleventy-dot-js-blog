@@ -18,12 +18,14 @@ module.exports = eleventyConfig =>
    * @param {Array} collection 11ty collection to map over
    * @param {Object} page The current 11ty `page` object
    * @param {String|Array} classes CSS classes for the `nav` (optional)
+   * @param {String} ariaLabel The WAI-ARIA `aria-label` to attach to the `nav` (optional)
    * @return {String} The rendered shortcode
    * @example `${this.nav(data.collections.policies, data.page)}`
    * @see {@link https://www.11ty.dev/docs/collections/ Collections in 11ty}
    * @see {@link https://www.11ty.dev/docs/data/ Using data in 11ty}
+   * @see {@link https://www.w3.org/TR/wai-aria/#aria-label WAI-ARIA specification for `aria-label` property}
    */
-  eleventyConfig.addShortcode('nav', (collection, page, classes) => {
+  eleventyConfig.addShortcode('nav', (collection, page, classes, ariaLabel) => {
     var classList = []
     if (classes !== undefined) {
       if (typeof classes === 'string') {
@@ -34,7 +36,9 @@ module.exports = eleventyConfig =>
       }
     }
     return typeof collection !== 'undefined' && collection.length > 0
-      ? `<nav class="${classList.map(item => `${item}`).join(' ')}">
+      ? `<nav 
+          ${classes ? `class="${classList.map(item => `${item}`).join(' ')}"`: '' }
+          ${ariaLabel ? `aria-label="${ariaLabel}"` : ''}>
         ${collection
           .sort((a, b) => a.data.weight - b.data.weight)
           .map(item => `<a href="${item.data.url ? item.data.url : item.url}" 
