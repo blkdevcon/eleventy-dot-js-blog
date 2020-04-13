@@ -27,8 +27,8 @@ exports.render = function (data) {
     </header>
     ${data.content}
     ${this.archive(data, data.pagination.items)}
-  </article>
-  <footer>
-    ${this.paginationNav(data)}
-  </footer>`
+    <footer>
+      ${this.paginationNav(data)}
+    </footer>
+  </article>`
 }
