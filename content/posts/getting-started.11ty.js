@@ -52,9 +52,9 @@ Now that you have an idea of what a local development environment is and why the
 
 To get up and running, we’ll need to become familiar with four sets of tools, each of which will be the subject of an upcoming post in this series:
 
-1. The _command line interface_, or _terminal_ that comes preinstalled with your operating system
+1. [The _command line interface_, or _terminal_ that comes preinstalled with your operating system](/blog/terminal/)
+1. [Git](/blog/intro-to-git/)
 1. Node.js and its package manager, <abbr title="NPM: Node Package Manager">NPM</abbr>
-1. Git
 1. A text editor
 
 Stay tuned 📻.`

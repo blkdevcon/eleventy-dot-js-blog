@@ -67,10 +67,10 @@ footer {
 
 code {
   background-color: var(--grayscale-100);
-  color: var(--black);
-  hyphens: none;
-  padding: 1px 3px;
   border-radius: 3px;
+  color: var(--black);
+  hyphens: manual;
+  padding: 1px 3px;
 }
 
 /* Typography */

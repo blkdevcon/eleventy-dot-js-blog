@@ -24,7 +24,7 @@ exports.data ={
  * @return {String} The rendered template
  */
 exports.render = data =>
-`_This is the second post in a five-part series on [“Getting Started with 🍦.11ty.js”](/getting-started/)_
+`_This is the second post in a five-part series on [“Getting Started with 🍦.11ty.js”](/blog/getting-started/)_
 
 ### Accessing Your Terminal
 
@@ -60,4 +60,4 @@ To go _up_ ⬆️ 📂 from the current directory to another one outside it, you
 
 You can repeat the sequence <code>../</code> as many times as you need. Say you wanted to go up two levels: you could type <code>cd ../../</code>.
 
-Once you’re comfortable listing a directory’s contents and moving from one directory to another, you have all the basic command line skills you’ll need to start setting up your [local development environment](/getting-started/).`
+Once you’re comfortable listing a directory’s contents and moving from one directory to another, you have all the basic command line skills you’ll need to start setting up your [local development environment](/blog/getting-started/).`
