@@ -27,15 +27,15 @@ _That’s the power of Eleventy JavaScript Templates._
 
 ### 🚧 Lower barrier to entry
 
-One fewer language to write `===` one fewer language to learn in order to get started
+One fewer language to write `===` one fewer language to learn in order to get started.
 
 ### 🤯 Lower cognitive overhead
 
-One fewer language to write `===` one fewer language to improve your skills 
+One fewer language to write `===` one fewer language to improve your skills.
 
 ### 🧹 Lower technical debt
 
-One fewer language to write `===` one fewer language to maintain for the lifecycle of a project 
+One fewer language to write `===` one fewer language to maintain for the lifecycle of a project.
 
 ### 🕰️ More resilient code
 
@@ -49,4 +49,4 @@ But the only major limit to JavaScript templates is your imagination.
 
 Now, I mean no disrespect to someone else’s (formerly?) preferred templating languages. Their creators, maintainers, and communities have helped advance web development in significant ways. But none of those creators had Eleventy when they developed those templating languages …
 
-… you do! So why not turn Eleventy up a notche!
+… you do! So why not turn Eleventy up a notch!
