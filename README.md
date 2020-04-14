@@ -39,6 +39,7 @@ Here’s a list of new features being considered. [Submit a feature request](htt
 * 🗓 Date archives for blog #16
 * 💌 Contact form (using [Netlify Forms](https://docs.netlify.com/forms/setup/)) #17
 * 📡 [RSS feed](https://www.11ty.dev/docs/plugins/rss/) for blog posts #3
+* 🗺️ Sitemap #54
 * 🔍 [Search](https://www.hawksworx.com/blog/adding-search-to-a-jamstack-site/) #18
 * 📄 Documentation site #19
 * 📣 [Webmentions](https://mxb.dev/blog/using-webmentions-on-static-sites/) #20
