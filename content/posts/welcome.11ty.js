@@ -28,8 +28,8 @@ exports.render = data =>
   
 The posts in this sample blog are meant to guide you through how to install 🍦.11ty.js and spin up your own site with this starter project. You don’t need web development experience to follow along. All you need is a willingness to learn! You can work at your own pace and skip around if you like.
 
-> ### 😰 Stuck? 
-> Try [submitting an issue on GitLab](${data.pkg.bugs.url}) where friendly folks can try to help.
+> <p><strong>😰 Stuck?</strong></p>
+> <p>Try <a href="${data.pkg.bugs.url}">submitting an issue on GitLab</a> where friendly folks can try to help.</p>
 
 ### Why 🍦?
 
