@@ -1,7 +1,7 @@
 {
   "name": "eleventy-dot-js-blog",
-  "version": "0.1.0",
-  "description": "A starter repository showing how to build a blog with the Eleventy static site generator using JavaScript templates.",
+  "version": "0.1.1",
+  "description": "A starter project showing how to build a blog with the Eleventy static site generator using JavaScript templates.",
   "main": "index.js",
   "scripts": {
     "build": "ELEVENTY_ENV=production npx eleventy",
