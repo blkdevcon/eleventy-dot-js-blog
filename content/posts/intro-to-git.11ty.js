@@ -87,7 +87,7 @@ All that’s left is to [configure Git](#configuring-git).
 
 ##### 1. [Download the latest version from the Git website](https://git-scm.com/download/win).
 
-##### 2. Open the downloaded program and follow the instructions from the Windows installation wizard.
+##### 2. Open the downloaded program and follow the instructions from the installation wizard.
 
 All that’s left is to configure Git.
 
@@ -110,4 +110,4 @@ In your terminal, enter the following command, replacing <code>my-blog-directory
 <pre><code>git clone ${data.pkg.repository.url} my-blog-directory-name
 </code></pre>
 
-We’ve barely scratched the surface with Git, but now that you have Git and a local copy of 🍦.11ty.js, we can pick up in the next post of this series with installing Node.js and Eleventy.`
+We’ve barely scratched the surface with Git. But now that you have Git and a local copy of 🍦.11ty.js, we can pick up in the next post of this series with [installing Node.js and Eleventy](/blog/installing-nodejs-and-eleventy/).`
