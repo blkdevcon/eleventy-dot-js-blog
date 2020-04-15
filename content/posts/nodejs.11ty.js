@@ -30,7 +30,7 @@ exports.render = data =>
 >
 > By this point, you should have already:
 > 1. [Installed and configured Git](/blog/intro-to-git/) on your computer
-> 1. Cloned 🍦.11ty.js from [GitLab](${data.pkg.homepage}) into your prefered directory
+> 1. Cloned 🍦.11ty.js from [GitLab](${data.pkg.homepage}) into your preferred directory
 
 In order to run 🍦.11ty.js in your [local development environment](/blog/getting-started/), the final tool you’ll need to have installed is a program called [Node.js][nodejs], which also comes with a handy package manager called <abbr title="npm: Node Package Manager">npm</abbr>.
 
