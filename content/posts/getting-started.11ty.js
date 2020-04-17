@@ -55,6 +55,6 @@ To get up and running, we’ll need to become familiar with four sets of tools, 
 1. [The _command line interface_, or _terminal_ that comes preinstalled with your operating system](/blog/terminal/)
 1. [Git](/blog/intro-to-git/)
 1. [Node.js](/blog/installing-nodejs-and-eleventy/) and its package manager, <abbr title="npm: Node Package Manager">npm</abbr>
-1. A text editor
+1. [A text editor](/blog/text-editor/)
 
 Stay tuned 📻.`

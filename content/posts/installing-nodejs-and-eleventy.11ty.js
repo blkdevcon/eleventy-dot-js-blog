@@ -100,7 +100,7 @@ In your [terminal](/blog/terminal/) and enter the following command:
 <pre><code>npm install
 </code></pre>
 
-We’ve just gotten started with Node.js. But now that you have all the necessary software installed, we can pick up in the final post of this series with editing and creating your first content with 🍦.11ty.js.
+We’ve just gotten started with Node.js. But now that you have all the necessary software installed, we can pick up in the [final post](/blog/text-editor/) of this series with editing and creating your first content with 🍦.11ty.js.
 
 [installer]: https://nodejs.org/en/#home-downloadhead
 [nodejs]: https://nodejs.org/`
