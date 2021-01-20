@@ -8,7 +8,7 @@
  * Acts as front matter in JavaScript templates
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
-exports.data = {
+export var data = {
   layout: 'layouts/base'
 }
 
@@ -20,10 +20,11 @@ exports.data = {
  * @return {String} The rendered template
  * @see {@link https://www.11ty.dev/docs/shortcodes/ Shortcodes in 11ty}
  */
-exports.render = data =>
-  `<article>
+export function render(data) {
+  return `<article>
     <header class="article-header">
       <h2>${data.title}</h2>
     </header>
     ${data.content}
   </article>`
+}

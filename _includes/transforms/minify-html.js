@@ -7,7 +7,7 @@
  * Import Juriy Zaytsev’s HTMLMinifier module
  * @see {@link https://github.com/kangax/html-minifier GitHub}
  */
-var htmlmin = require('html-minifier')
+import * as htmlmin from 'html-minifier'
 
 /**
  * An Eleventy transform for minifying HTML template files
@@ -15,7 +15,7 @@ var htmlmin = require('html-minifier')
  * @param {Object} eleventyConfig 11ty’s Config API
  * @see {@link https://www.11ty.dev/docs/config/#transforms 11ty docs}
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * Minifies HTML

@@ -7,7 +7,7 @@
  * Import Terser module
  * @see {@link https://github.com/terser-js/terser GitHub}
  */
-var Terser = require('terser')
+import * as Terser from 'terser'
 
 /**
  * An Eleventy filter for minifying JavaScript inline
@@ -15,7 +15,7 @@ var Terser = require('terser')
  * @param {Object} eleventyConfig 11ty’s Config API
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions JavaScript template functions in 11ty}
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * Minify JavaScript

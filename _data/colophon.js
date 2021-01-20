@@ -14,7 +14,7 @@
  * @module _data/colophon
  * @see {@link https://www.11ty.dev/docs/data-global/ Global data files in 11ty}
  */
-module.exports = {
+export default {
   en: {
     generator: '🏗️ Created by <a href=\"https://twitter.com/reubenlillie\">@reubenlillie</a> with the static site generator <a href=\"https://11ty.dev/\">🕚  Eleventy</a>.',
     languages: 'Source code written in 🍦 vanilla JavaScript, 🕸️ semantic HTML, 🎨 progressively enhanced CSS, and a 🧂 dash of Markdown.',

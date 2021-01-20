@@ -9,7 +9,7 @@
  * @module _includes/shortcodes/head-tag
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * HTML `<head>` markup

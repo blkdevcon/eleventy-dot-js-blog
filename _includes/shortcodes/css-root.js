@@ -9,7 +9,7 @@
  * @module _includes/shortcodes/cssRoot
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * CSS `:root` custom properties

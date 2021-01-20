@@ -10,7 +10,7 @@
  * @module _includes/shortcodes/page-date
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * Page date markup

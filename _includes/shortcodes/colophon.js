@@ -9,7 +9,7 @@
  * @module _includes/shortcodes/colophon
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * The colophon markup

@@ -9,7 +9,7 @@
  * @module _includes/shortcodes/author
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * Content author markup

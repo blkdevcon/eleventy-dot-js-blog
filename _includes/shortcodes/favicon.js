@@ -9,7 +9,7 @@
  * @param {Object} eleventyConfig 11ty’s Config API
  * @see {@link https://www.11ty.dev/docs/filters/ 11ty docs}
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * Load the appropriate favicon

@@ -9,7 +9,7 @@
  * @module _includes/shortcodes/site-footer
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * The page footer markup

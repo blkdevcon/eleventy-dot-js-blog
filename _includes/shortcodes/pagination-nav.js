@@ -9,7 +9,7 @@
  * @module _includes/shortcodes/pagination-nav
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * The pagination navigation markup
@@ -23,6 +23,7 @@ module.exports = eleventyConfig =>
    */
   eleventyConfig.addShortcode('paginationNav', (data) => {
     var l10n = data.site[data.locale].pagination
+
     // Use pagination navigation only when there’s more than one page
     return `${data.pagination.pages.length > 1
       ? `<nav aria-label="${l10n.navLabel}">

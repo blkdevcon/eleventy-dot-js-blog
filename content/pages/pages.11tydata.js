@@ -9,11 +9,13 @@
  * @see {@link https://www.11ty.dev/docs/data-template-dir/ Template and directory data files in 11ty}
  * @see {@link  https://www.11ty.dev/docs/permalinks/ Permalinks in 11ty}
  */
-module.exports = {
+export default {
   layout: 'layouts/page',
   // Note: The permalink value uses Nunjucks/Liquid syntax;
   // a future version of 11ty may allow for JavaScript template literals
-  permalink: '/{{page.fileSlug}}/index.html',
+  eleventyComputed: {
+    permalink: data => `/${data.page.fileSlug}/index.html`
+  },
   tags: [
     'pages'
   ]

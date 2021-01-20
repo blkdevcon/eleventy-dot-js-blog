@@ -15,7 +15,7 @@
  * @see {@link https://www.11ty.dev/docs/data-global/ Global data files in 11ty}
  * @see {@link https://creativecommons.org/ Creative Commons}
  */
-module.exports = {
+export default {
   // Use current year
   year: new Date().getFullYear(),
   holder: '<a href=\"https://twitter.com/reubenlillie\">Reuben L. Lillie</a>',

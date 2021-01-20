@@ -8,7 +8,7 @@
  * Acts as front matter in JavaScript templates
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
-exports.data ={
+export var data = {
   title: 'Getting Started with 🍦.11ty.js, Part V: Choosing a Text Editor',
   date: '2020-04-17',
   permalink: '/blog/text-editor/',
@@ -23,7 +23,7 @@ exports.data ={
  * @param {Object} data 11ty’s data object
  * @return {String} The rendered template
  */
-exports.render = data =>
+export var render = data =>
 `_This is the final post in a five-part series on [“Getting Started with 🍦.11ty.js”](/blog/getting-started/)_
 
 > **👣 Background** 

@@ -8,7 +8,7 @@
  * Acts as front matter in JavaScript templates
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
-exports.data ={
+export var data = {
   title: 'Welcome to 🍦.11ty.js',
   date: '2020-04-10',
   permalink: '/blog/welcome/',
@@ -23,7 +23,7 @@ exports.data ={
  * @param {Object} data 11ty’s data object
  * @return {String} The rendered template
  */
-exports.render = data =>
+export var render = data =>
 `This blog isn’t just some nonsensical chunk of sample content—it occassionally rises to the level of being helpful (well, … hopefully).
   
 The posts in this sample blog are meant to guide you through how to install 🍦.11ty.js and spin up your own site with this starter project. You don’t need web development experience to follow along. All you need is a willingness to learn! You can work at your own pace and skip around if you like.

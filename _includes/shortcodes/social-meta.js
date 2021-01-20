@@ -9,7 +9,7 @@
  * @module _includes/shortcodes/social-meta
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * OpenGraph and Twitter metadata with fallbacks (./_data/site.js)

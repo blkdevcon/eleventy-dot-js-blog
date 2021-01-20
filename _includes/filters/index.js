@@ -4,9 +4,9 @@
  */
 
 // Import filters to include
-var fileToString = require('./file-to-string')
-var minifyCSS = require('./minify-css')
-var minifyJS = require('./minify-js')
+import fileToString from './file-to-string.js'
+import minifyCSS from './minify-css.js'
+import minifyJS from './minify-js.js'
 
 /**
  * A loader module for filters
@@ -15,7 +15,7 @@ var minifyJS = require('./minify-js')
  * @see {@link https://www.11ty.dev/docs/config/ Configuring 11ty}
  * @see {@link https://www.11ty.dev/docs/filters/ Filters in 11ty}
  */
-module.exports = eleventyConfig => {
+export default function (eleventyConfig) {
 
   // Function calls to filters to include
   fileToString(eleventyConfig)
@@ -23,5 +23,4 @@ module.exports = eleventyConfig => {
   minifyJS(eleventyConfig)
 
   return
-
 }

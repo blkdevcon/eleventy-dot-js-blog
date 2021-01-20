@@ -8,7 +8,7 @@
  * @module _includes/shortcodes/inline-css
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * HTML `<style>` markup

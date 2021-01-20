@@ -5,7 +5,7 @@
  */
 
 // Require native Node.js modules
-var fs = require('fs')
+import { readFileSync } from 'fs'
 
 /**
  * Require the includes module for the following.
@@ -18,7 +18,7 @@ var fs = require('fs')
  * rather than all in this file,
  * helps keep the codebase organized—at least that’s the idea.
  */
-var includes = require('./_includes/index')
+import includes from './_includes/'
 
 /**
  * 11ty’s configuration module
@@ -27,7 +27,7 @@ var includes = require('./_includes/index')
  * @return {Object} 11ty’s Config object optional
  * @see {@link https://www.11ty.dev/docs/config/ Configuring 11ty}
  */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 
   // Pass 11ty’s Conig object to the includes module (~/_includes)
   includes(eleventyConfig)
@@ -59,7 +59,7 @@ module.exports = function (eleventyConfig) {
     callbacks: {
       ready: (err, bs) => {
         bs.addMiddleware("*", (req, res) => {
-          const content_404 = fs.readFileSync('_site/404.html');
+          const content_404 = readFileSync('_site/404.html');
           // Provides the 404 content without redirect
           res.write(content_404);
           // Add 404 http status code in request header

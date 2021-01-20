@@ -14,16 +14,16 @@
  * @module _data/site
  * @see {@link https://www.11ty.dev/docs/data-global/ Global data files in 11ty}
  */
-module.exports = {
+export default {
   // The root for the site domain (without a trailing slash)
   baseUrl: 'https://example.com',
   // Uses this locale when one is not set in content/content.11tydata.js
-  defaultLocale: 'en-US',
+  defaultLocale: 'en',
   // Localized strings and other options for English
   // To add a language, copy this object, then change the values
   en: {
     // English as used in the Unite States
-    locale: 'en-US',
+    locale: 'en',
     title: '🍦.11ty.js',
     // The subtitle, slogan, or catchphrase for your site,
     // used in _includes/shortcodes/site-header

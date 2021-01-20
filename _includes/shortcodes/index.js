@@ -4,26 +4,26 @@
  */
 
 // Import shortcodes to include
-var archive = require('./archive')
-var author = require('./author')
-var authorMeta = require('./author-meta')
-var colophon = require('./colophon')
-var copyrightNotice = require('./copyright-notice')
-var cssRoot = require('./css-root')
-var description = require('./description')
-var editThisPage = require('./edit-this-page')
-var externalCSS = require('./external-css')
-var favicon = require('./favicon')
-var gettingStarted = require('./getting-started')
-var headTag = require('./head-tag')
-var inlineCSS = require('./inline-css')
-var nav = require('./nav')
-var pageDate = require('./page-date')
-var paginationNav = require('./pagination-nav')
-var siteFooter = require('./site-footer')
-var siteHeader = require('./site-header')
-var socialMeta = require('./social-meta')
-var titleTag = require('./title-tag')
+import archive from './archive.js'
+import author from './author.js'
+import authorMeta from './author-meta.js'
+import colophon from './colophon.js'
+import copyrightNotice from './copyright-notice.js'
+import cssRoot from './css-root.js'
+import description from './description.js'
+import editThisPage from './edit-this-page.js'
+import externalCSS from './external-css.js'
+import favicon from './favicon.js'
+import gettingStarted from './getting-started.js'
+import headTag from './head-tag.js'
+import inlineCSS from './inline-css.js'
+import nav from './nav.js'
+import pageDate from './page-date.js'
+import paginationNav from './pagination-nav.js'
+import siteFooter from './site-footer.js'
+import siteHeader from './site-header.js'
+import socialMeta from './social-meta.js'
+import titleTag from './title-tag.js'
 
 /**
  * A loader module for shortcodes
@@ -32,7 +32,7 @@ var titleTag = require('./title-tag')
  * @see {@link https://www.11ty.dev/docs/config/ Configuring 11ty}
  * @see {@link https://www.11ty.dev/docs/shortcodes/ Shortcodes in 11ty}
  */
-module.exports = eleventyConfig => {
+export default function (eleventyConfig) {
 
   // Function calls to shortcodes to include
   archive(eleventyConfig)
@@ -55,7 +55,6 @@ module.exports = eleventyConfig => {
   siteHeader(eleventyConfig)
   socialMeta(eleventyConfig)
   titleTag(eleventyConfig)
-
+  
   return
-
 }

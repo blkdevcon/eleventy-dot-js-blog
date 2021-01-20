@@ -10,7 +10,7 @@
  * @see {@link https://www.11ty.dev/docs/permalinks/#permalink-false `permalink: false` in 11ty}
  * @see {@link  https://www.11ty.dev/docs/permalinks/ Permalinks in 11ty}
  */
-module.exports = {
+export default {
   // Setting permalink to false means Eleventy will not create an output file,
   // but the content will still be available in collections and so forth
   permalink: false,

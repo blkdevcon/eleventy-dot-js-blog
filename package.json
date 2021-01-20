@@ -1,12 +1,12 @@
 {
   "name": "eleventy-dot-js-blog",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "A starter project showing how to build a blog with the Eleventy static site generator using JavaScript templates.",
   "main": "index.js",
   "scripts": {
-    "build": "ELEVENTY_ENV=production npx eleventy",
-    "dev": "ELEVENTY_ENV=development npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy"
+    "build": "ELEVENTY_ENV=production node -r esm node_modules/.bin/eleventy",
+    "dev": "ELEVENTY_ENV=development node -r esm node_modules/.bin/eleventy --serve",
+    "debug": "DEBUG=* node -r esm node_modules/.bin/eleventy"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "clean-css": "^4.2.3",
+    "esm": "^3.2.25",
     "html-minifier": "^4.0.0",
     "terser": "^4.6.13"
   }

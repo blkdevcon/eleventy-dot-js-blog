@@ -4,7 +4,7 @@
  */
 
 // Import transforms to include
-var minifyHTML = require('./minify-html')
+import minifyHTML from './minify-html.js'
 
 /**
  * A loader module for transforms
@@ -13,11 +13,10 @@ var minifyHTML = require('./minify-html')
  * @see {@link https://www.11ty.dev/docs/config/ Configuring 11ty}
  * @see {@link https://www.11ty.dev/docs/config/#transforms Transforms in 11ty}
  */
-module.exports = eleventyConfig => {
+export default function (eleventyConfig) {
 
   // Function calls to transforms to include
   minifyHTML(eleventyConfig)
 
   return
-
 }

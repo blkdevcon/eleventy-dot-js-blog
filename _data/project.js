@@ -8,6 +8,6 @@
  * @module _data/project
  * @see {@link https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables Environment variables in 11ty}
  */
-module.exports = {
+export default {
   environment: process.env.ELEVENTY_ENV
 }

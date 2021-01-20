@@ -8,7 +8,7 @@
  * Acts as front matter in JavaScript templates
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#optional-data-method Optional `data` in JavaScript templates in 11ty}
  */
-exports.data = {
+export var data = {
   layout: 'layouts/base'
 }
 
@@ -20,7 +20,7 @@ exports.data = {
  * @return {String} The rendered template
  * @see {@link https://www.11ty.dev/docs/pagination/ Pagination in 11ty}
  */
-exports.render = function (data) {
+export function render(data) {
   var l10n = data.site[data.locale]
   var reversed = [...data.collections.posts.slice(-2)].reverse()
   return `<article>

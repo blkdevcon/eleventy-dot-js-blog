@@ -9,7 +9,7 @@
  * @module _includes/shortcodes/external-css
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * Create one or more `link` references

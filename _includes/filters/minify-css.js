@@ -7,7 +7,7 @@
  * Import Jakup Pawlowicz’s Clean-CSS module
  * @see {@link https://github.com/jakubpawlowicz/clean-css GitHub}
  */
-var CleanCSS = require('clean-css')
+import * as CleanCSS from 'clean-css'
 
 /**
  * An Eleventy filter for minifying CSS inline
@@ -15,7 +15,7 @@ var CleanCSS = require('clean-css')
  * @param {Object} eleventyConfig 11ty’s Config API
  * @see {@link https://www.11ty.dev/docs/languages/javascript/#javascript-template-functions JavaScript template functions in 11ty}
  */
-module.exports = eleventyConfig =>
+export default eleventyConfig =>
 
   /**
    * Minifies CSS

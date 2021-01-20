@@ -4,9 +4,9 @@
  */
 
 // Import modules to include
-var filters = require('./filters/index')
-var shortcodes = require('./shortcodes/index')
-var transforms = require('./transforms/index')
+import filters from './filters/index.js'
+import shortcodes from './shortcodes/index.js'
+import transforms from './transforms/index.js'
 
 /**
  * A loader module for includes
@@ -14,7 +14,7 @@ var transforms = require('./transforms/index')
  * @param {Object} eleventyConfig 11ty’s Config API
  * @see {@link https://www.11ty.dev/docs/config/ Configuring 11ty}
  */
-module.exports = eleventyConfig => {
+export default function (eleventyConfig) {
 
   // Function calls to modules to include
   filters(eleventyConfig)
@@ -22,5 +22,4 @@ module.exports = eleventyConfig => {
   transforms(eleventyConfig)
 
   return
-
 }

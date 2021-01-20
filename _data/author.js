@@ -14,7 +14,7 @@
  * @module _data/author
  * @see {@link https://www.11ty.dev/docs/data-global/ Global data files in 11ty}
  */
-module.exports = {
+export default {
   name: {
     fullName: 'Reuben L. Lillie',
     givenName: 'Reuben',

@@ -14,7 +14,7 @@
  * @module _data/colors
  * @see {@link https://www.11ty.dev/docs/data-global/ Global data files in 11ty}
  */
-module.exports = {
+export default {
   /*
    * Colors generated around the named color, plum velvet
    * @see {@link https://convertingcolors.com/hex-color-7D0552.html?search=Hex(7d0552) Converting Colors}

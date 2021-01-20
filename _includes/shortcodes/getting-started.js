@@ -9,7 +9,7 @@
  * @module _includes/shortcodes/getting-started
  * @param {Object} eleventyConfig 11ty’s Config API
  */
-module.exports = eleventyConfig =>
+export default function (eleventyConfig) {
 
   /**
    * “Getting Started” `section` markup
@@ -33,3 +33,5 @@ module.exports = eleventyConfig =>
       <p>ℹ️  More information on <a href="${data.pkg.homepage}">GitLab</a></p>
     </section>`
   })
+
+}
