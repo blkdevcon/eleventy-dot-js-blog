@@ -7,7 +7,7 @@
  * Import Terser module
  * @see {@link https://github.com/terser-js/terser GitHub}
  */
-import * as Terser from 'terser'
+import Terser from 'terser'
 
 /**
  * An Eleventy filter for minifying JavaScript inline

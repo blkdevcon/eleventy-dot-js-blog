@@ -7,7 +7,7 @@
  * Import Juriy Zaytsev’s HTMLMinifier module
  * @see {@link https://github.com/kangax/html-minifier GitHub}
  */
-import * as htmlmin from 'html-minifier'
+import htmlmin from 'html-minifier'
 
 /**
  * An Eleventy transform for minifying HTML template files
