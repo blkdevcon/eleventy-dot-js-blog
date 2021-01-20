@@ -21,10 +21,10 @@
   },
   "homepage": "https://gitlab.com/reubenlillie/eleventy-dot-js-blog#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0",
+    "@11ty/eleventy": "^0.11.1",
     "clean-css": "^4.2.3",
     "esm": "^3.2.25",
     "html-minifier": "^4.0.0",
-    "terser": "^4.6.13"
+    "terser": "^5.5.1"
   }
 }
